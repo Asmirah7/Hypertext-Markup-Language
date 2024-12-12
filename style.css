@@ -1,0 +1,28 @@
+circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Optional, just for centering */
+}
+
+.circle-image {
+    width: 150px; /* Set your desired size */
+    height: 150px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the circle evenly */
+    border: 2px solid #000; /* Optional, adds a border */
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle Image</title>
+</head>
+<body>
+    <img 
+        src="your-image.jpg" 
+        alt="Example" 
+        style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 2px solid #000;">
+</body>
+</html>
