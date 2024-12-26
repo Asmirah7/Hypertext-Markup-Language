@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+</head>
+<body>
+    <h1>Sample Form</h1>
+
+
+    <form>
+        <!-- Fieldset and Legend -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            
+            <!-- Label and Input -->
+            <label >Name:</label>
+            <input placeholder="Enter your name" required>
+            <br><br>
+
+            <!-- Label and Input with Datalist -->
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" list="cities" placeholder="Enter your city">
+            <datalist>
+                <option value="New York">
+                <option value="Los Angeles">
+                <option value="Chicago">
+                <option value="Houston">
+                <option value="Phoenix">
+            </datalist>
+            <br><br>
+
+            <!-- Textarea -->
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments"></textarea>
+            <br><br>
+        </fieldset>
+
+        <!-- Dropdown Menu -->
+        <label for="department">Choose a department:</label>
+
+        <select id="department" name="department">
+            <optgroup label="Technical">
+                <option value="development">Development</option>
+                <option value="it_support">IT Support</option>
+            </optgroup>
+
+            <optgroup label="Administrative">
+                <option value="hr">Human Resources</option>
+                <option value="finance">Finance</option>
+            </optgroup>
+        </select>
+
+        <br><br>
+
+        <!-- Output -->
+        <label for="calculation">Calculation Result:</label>
+        <output id="calculation" name="result">10</output>
+        <br><br>
+
+        <!-- Button -->
+        <button type="submit">Submit</button>
+    </form>
+
+
+</body>
+</html>
